@@ -1,0 +1,42 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://127.0.0.1:19718/
+  response:
+    body: {string: '{"timestamp": 1530138394.736338}'}
+    headers:
+      Content-Type: [application/json]
+      Date: ['Wed, 27 Jun 2018 22:26:34 GMT']
+      Server: [BaseHTTP/0.6 Python/3.6.4]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://api.openweathermap.org/data/2.5/weather?zip=10001,us&appid=YOUR_OWN_OWM_APP_ID
+  response:
+    body: {string: '{"coord":{"lon":-73.99,"lat":40.73},"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"base":"stations","main":{"temp":295.69,"pressure":1014,"humidity":60,"temp_min":295.15,"temp_max":296.15},"visibility":16093,"wind":{"speed":3.6,"deg":180,"gust":5.7},"clouds":{"all":90},"dt":1530135900,"sys":{"type":1,"id":1972,"message":0.0053,"country":"US","sunrise":1530091625,"sunset":1530145878},"id":420027013,"name":"New
+        York","cod":200}'}
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Methods: ['GET, POST']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['467']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Wed, 27 Jun 2018 22:26:35 GMT']
+      Server: [openresty]
+      X-Cache-Key: ['/data/2.5/weather?zip=10001,us']
+    status: {code: 200, message: OK}
+version: 1
