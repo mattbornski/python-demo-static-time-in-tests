@@ -41,13 +41,3 @@ def memoize_time():
 
     time_server.shutdown()
     time_server_thread.join()
-
-
-
-@vcr.use_cassette
-@memoize_time()
-def test_cache_expiry():
-    weather_client = weather.Client()
-
-    # Our weather client should cache forecasts for a period, but not forever
-

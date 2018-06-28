@@ -1,4 +1,4 @@
 #!/bin/bash
 
 source env/bin/activate
-pytest --capture=no $@
+pytest -rx --capture=no $@

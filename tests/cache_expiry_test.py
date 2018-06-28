@@ -1,4 +1,5 @@
 from pathlib import Path
+import pytest
 import sys
 import vcr
 
@@ -27,6 +28,7 @@ def test_cache_expiry_with_memoization():
 
 
 
+@pytest.mark.xfail(reason='demonstrating why freezing test time to fixture recording time can be useful')
 @vcr.use_cassette('cache_expiry_test')
 def test_cache_expiry_without_memoization():
     weather_client = mock_client_with_cache()
